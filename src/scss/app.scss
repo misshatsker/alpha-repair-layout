@@ -1,52 +1,5 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-// -----
-
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    
+    font-family: 'Plus Jakarta Sans', sans-serif;   
 }
 
 header {
@@ -103,6 +56,14 @@ header {
             border: 1px solid transparent;
             background: transparent url("/img/search-icon.svg") no-repeat center;
             cursor: pointer;
+        }
+    }
+
+    .header-cta {
+
+        .book-online-button {
+            position: absolute;
+            margin-top: 16px;
         }
     }
 
@@ -281,40 +242,6 @@ footer {
         }
     }
 
-    .footer-button {
-        width: 180px;
-        box-sizing: border-box;
-        border-radius: 12px;
-        background: #485982;
-        padding: 9px 22px;
-        display: flex;
-        align-items: center;
-        background: #FAFF00;
-        margin-bottom: 75px;
-
-        &:hover {
-            cursor: pointer;
-            opacity: 0.9;
-        }
-
-        .footer-phone-logo {
-            padding-right: 9px;
-            width: 18px;
-            height: 18px;
-        }
-
-        .footer-buton-text {
-            color: #344265;
-            font-family: 'Plus Jakarta Sans';
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 26px;
-            letter-spacing: -0.5px;
-            text-transform: uppercase;
-        }
-    }
-
     .footer-rights {
         padding-bottom: 16px;
         color: #F8F8F8;
@@ -388,4 +315,38 @@ footer {
     font-style: normal;
     font-weight: 800;
     text-decoration: none;
+}
+
+.book-online-button {
+    width: 180px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #485982;
+    padding: 9px 22px;
+    display: flex;
+    align-items: center;
+    background: #FAFF00;
+    margin-bottom: 75px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    .phone-logo {
+        padding-right: 9px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .buton-text {
+        color: #344265;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 26px;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+    }
 }
