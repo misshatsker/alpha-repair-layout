@@ -61,6 +61,49 @@ header {
 
     .search-field {
 
+        form {
+            display: flex;
+            position: relative;
+        }
+
+        .search {
+            padding-left: 12px;
+            padding-right: 24px;
+            width: 282px;
+            height: 39px;
+            justify-content: center;
+            align-items: center;
+            gap: 78px;
+            flex-shrink: 0;
+            border: 0;
+            border-radius: 10px;
+            background: #F8F8F8;
+            outline: none;
+
+            &::placeholder {
+                color: #485982;
+                font-family: 'Plus Jakarta Sans';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            &::-webkit-search-cancel-button {
+                -webkit-appearance: none;
+            }
+        }
+
+        button[type="submit"] {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            text-indent: -999px;
+            overflow: hidden;
+            width: 40px;
+            border: 1px solid transparent;
+            background: transparent url("/img/search-icon.svg") no-repeat center;
+            cursor: pointer;
+        }
     }
 
     .phone {
@@ -74,16 +117,6 @@ header {
             height: 18px;
             margin-right: 6px;
         }
-
-        .phone-number {
-            margin: 0;
-            color: #FFF;
-            font-family: Plus Jakarta Sans;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 800;
-        }
-        
 
     }
 
@@ -100,7 +133,7 @@ header {
         .menu-list-text {
             color: #FFF;
             text-decoration: none;
-            font-family: Plus Jakarta Sans;
+            font-family: 'Plus Jakarta Sans';
             font-size: 17px;
             font-style: normal;
             font-weight: 600;
@@ -116,7 +149,7 @@ main {
     justify-content: space-between;
 
     .main-content-block {
-        font-family: Plus Jakarta Sans;
+        font-family: 'Plus Jakarta Sans';
         padding: 0 165px 110px 165px;
 
         
@@ -178,7 +211,7 @@ main {
 
             .main-content-button-text {
                 color: #FFF;
-                font-family: Plus Jakarta Sans;
+                font-family: 'Plus Jakarta Sans';
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 800;
@@ -203,6 +236,9 @@ footer {
     background: #344265;
     padding: 0 165px 24px 165px;
     height: 510px;
+    display: flex;
+    flex-direction: row;
+    
 
 
     .footer-logo {
@@ -222,20 +258,11 @@ footer {
             height: 18px;
             margin-right: 6px;
         }
-
-        .phone-number {
-            margin: 0;
-            color: #FFF;
-            font-family: Plus Jakarta Sans;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 800;
-        }
     }
 
     .footer-contact-text {
         color: #F8F8F8;
-        font-family: Plus Jakarta Sans;
+        font-family: 'Plus Jakarta Sans';
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -247,7 +274,10 @@ footer {
         }
 
         .contact-text-email {
+            display: block;
+            color: #F8F8F8;
             margin-bottom: 46px;
+            text-decoration: none;
         }
     }
 
@@ -275,7 +305,7 @@ footer {
 
         .footer-buton-text {
             color: #344265;
-            font-family: Plus Jakarta Sans;
+            font-family: 'Plus Jakarta Sans';
             font-size: 16px;
             font-style: normal;
             font-weight: 800;
@@ -288,11 +318,74 @@ footer {
     .footer-rights {
         padding-bottom: 16px;
         color: #F8F8F8;
-        font-family: Plus Jakarta Sans;
+        font-family: 'Plus Jakarta Sans';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 17px;
     }
 
+    .footer-menus {
+        display: flex;
+        margin-top: 110px;
+        margin-left: 150px;
+
+        .footer-menu {
+            margin-right: 80px;
+            width: max-content;
+        }
+
+        .footer-menu-h1 {
+            color: #FFF;
+            font-family: 'Plus Jakarta Sans';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .footer-links-list {
+
+            .footer-link {
+                margin-bottom: 10px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-family: 'Plus Jakarta Sans';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 70px;
+
+        .social-media-logo {
+            margin-right: 20px;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+.phone-number {
+    margin: 0;
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    text-decoration: none;
 }
